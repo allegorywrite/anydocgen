@@ -1,0 +1,11 @@
+venv/
+.env
+build/
+.obsidian
+
+refs/materials/*
+!refs/materials/.gitkeep
+
+docs/*.md
+docs/fig/*
+!docs/fig/.gitkeep
