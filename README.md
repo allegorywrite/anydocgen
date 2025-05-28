@@ -16,6 +16,11 @@ any_repo/
 │   └── utils/              # ユーティリティスクリプト
 ```
 
+## 前提
+
+- [Obsidian](https://obsidian.md/)(マークダウン表示可能であれば他ツールでも良い)
+- [mistralAI](https://mistral.ai/)からAPIキーを取得
+
 ## セットアップ手順
 
 ### 1. リポジトリのクローン
@@ -58,4 +63,4 @@ Build \
 
 ### 4. ビューワ起動
 
-本レポジトリは[Obsidian](https://obsidian.md/)での可視化を想定．(マークダウン表示可能であれば他ツールでも良い)
+[Obsidian](https://obsidian.md/)でanydocgenディレクトリを開く
