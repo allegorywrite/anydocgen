@@ -18,7 +18,7 @@ any_repo/
 
 ## 前提
 
-- [Obsidian](https://obsidian.md/)(マークダウン表示可能であれば他ツールでも良い)
+- [Obsidian](https://obsidian.md/) (マークダウン表示可能であれば他ツールでも良い)
 - [mistralAI](https://mistral.ai/)からAPIキーを取得
 
 ## セットアップ手順
