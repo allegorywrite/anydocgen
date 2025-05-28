@@ -35,6 +35,7 @@ MISTRALAI_API_KEY={mistralai_api_key}
 - `anydocgen/refs/materials/`内のすべてのPDFファイルのOCR処理
 - 結果を`anydocgen/refs/build/`ディレクトリに`{ファイル名}_ocr_result.md`として保存
 
+<!-- 現在は不要
 ### 2. OCR結果の整形
 
 `anydocgen/refs/build/`に生成されたMarkdownファイルを読み込み、以下の整形処理を行ってください：
@@ -45,7 +46,7 @@ MISTRALAI_API_KEY={mistralai_api_key}
 - 図表キャプションの整理
 - 目次の生成
 
-整形されたファイルは同じく`anydocgen/refs/build/`に`{ファイル名}_formatted.md`として保存してください。
+整形されたファイルは同じく`anydocgen/refs/build/`に`{ファイル名}_formatted.md`として保存してください。 -->
 
 ### 3. ソースコードの解析
 
@@ -59,7 +60,7 @@ MISTRALAI_API_KEY={mistralai_api_key}
 
 ### 4. 統合ドキュメントの生成
 
-{docgen_prompt}を実行
+{docgen_prompt}を目的として，ソースコードのドキュメントを作成します．ドキュメント内の全オブジェクトはソースコード内の具体的な実装との対応関係を示したうえで重厚かつ可読性の高いドキュメントを作成して下さい．
 記法については，`{reference_content}`を参考にすること．
 
 ## 期待される最終成果物
@@ -69,4 +70,4 @@ MISTRALAI_API_KEY={mistralai_api_key}
 - `anydocgen/refs/build/`: OCR処理・整形済みの参考資料
 - `anydocgen/docs/~.md`: 目的のドキュメント
 
-これらのドキュメントにより、プロジェクトの理解と利用が容易になることを目指してください。
+これらのドキュメントにより、ソースコードの理解と利用が容易になることを目指してください。

@@ -7,5 +7,6 @@ refs/materials/*
 !refs/materials/.gitkeep
 
 docs/*.md
+docs/*/*.md
 docs/fig/*
 !docs/fig/.gitkeep

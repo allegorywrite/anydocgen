@@ -35,27 +35,25 @@ cp your_reference.pdf anydocgen/refs/materials/
 
 コマンド実行可能なCoding Agentを立ち上げて以下を入力
 ```bash
-import anydocgen/prompts/core.md
-# anydocgen/prompts/core.mdの内容を把握してから実行すること
-Build
-(
-target_code: ドキュメント化するコード部分
-docgen_prompt: ドキュメント化についてのprompt
-reference_content: 参考にするファイル
-mistralai_api_key: mistralaiのAPIキー
-)
+import anydocgen/prompts/improved.md
+# anydocgen/prompts/improved.mdの内容を把握してから実行すること
+Build \
+  --target_code ドキュメント化するコードベースのパス \
+  --docgen_prompt ドキュメントのねらい・想定読者・利用シーン \
+  --reference_content スタイルや記法の例として参照するPDF \
+  --mistralai_api_key MistralAI の API キー \
+  --output_mode "single" | "multi"
 ```
 ex. 
 ```bash
-import anydocgen/prompts/core.md
-# anydocgen/prompts/core.mdの内容を把握してから実行すること
-Build
-(
-target_code: lacam/src/local_guide.cpp
-docgen_prompt: local_guideについてのアルゴリズムを数学的に定式化して疑似コードにしてください．記法は20250508_local-guidance.pdfを参考にしてください．
-reference_content: refs/materials/20250508_local-guidance.pdf
-mistralai_api_key: 0pdZKpjodsEYZzTtGlNakWjReMz60ZCsr
-)
+import anydocgen/prompts/improved.md
+# anydocgen/prompts/improved.mdの内容を把握してから実行すること
+Build \
+  --target_code glim_ros2, glim, glim_ext \
+  --docgen_prompt GLIMについてのアルゴリズムを数学的に定式化してドキュメントにしてください．記法はanydocgen/refs/materials/2407.10344v1.pdfを参考にしてください． \
+  --reference_content anydocgen/refs/materials/2407.10344v1.pdf \
+  --mistralai_api_key 0pdZKpjodsEYZzTtGlNakWjReMz60ZCsr \
+  --output_mode "multi"
 ```
 
 ### 4. ビューワ起動
